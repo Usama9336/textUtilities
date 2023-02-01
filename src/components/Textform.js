@@ -33,11 +33,11 @@ export default function Textform(props) {
     <div className='container' style={{color:props.mode==='light'?'#07013c':'white'}}>
 <h1>{props.heading}</h1>
 <div className="mb-3">
-  <label for="exampleFormControlInput1" className="form-label">Email address</label>
-  <input type="email"  style={{backgroundColor:props.mode==='dark'?'grey':'white',color:props.mode==='dark'?'white':'#07013c'}} className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+  <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
+  <input type="text"  style={{backgroundColor:props.mode==='dark'?'grey':'white',color:props.mode==='dark'?'white':'#07013c'}} className="form-control" id="exampleFormControlInput1" placeholder="name"/>
 </div>
 <div className="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+  <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
   <textarea className="form-control" value={text} style={{backgroundColor:props.mode==='dark'?'grey':'white',color:props.mode==='dark'?'white':'#07013c'}} onChange={handleonclick} id="exampleFormControlTextarea1" rows="8"></textarea>
 </div>
 <button className="btn btn-primary mx-1" onClick={handleupclick}>Convert to Uppercase</button>

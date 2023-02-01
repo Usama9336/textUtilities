@@ -53,10 +53,10 @@ export default function App () {
     <>
 <Navbar title="NAVIGATION" mode={mode} togglemode={togglemode}/>
 <Textform showalert={showalert} heading="ENTER YOUR TEXT HERE" mode={mode}/>
-<Routes>
+{/*<Routes>
   <Route exact path='/' element={<Textform/>} />
 <Route exact path='/about' element={<About/>}/>
-</Routes>
+  </Routes>*/}
 {/*<Alert alert={alert}/>
     <Routes>
 <div className="container my-3">
